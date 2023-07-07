@@ -166,6 +166,11 @@ _____             _____ _____
 	color: #2c3e50;
 	overflow-y: hidden;
 
+	@supports (height: 100dvh) and (width: 100dvw) {
+		width: 100dvw;
+		height: 100dvh;
+	}
+
 	&.is-dark-bg {
 		background-color: #000;
 	}
